@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ====== dari file tailwind.css figma kamu ====== */
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+/* (kalau di file kamu ada animasi lain, tinggal paste lanjutannya di sini) */
+
+/* ====== styling globalmu ====== */
+body {
+  @apply bg-slate-50 text-slate-800;
+}
